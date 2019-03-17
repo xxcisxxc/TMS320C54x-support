@@ -4,10 +4,10 @@
 This VSCode extension provides basic TMS320C54x Assembly language colorization and snippets support.
 
 ### Colors
-![colors](images/vscode-mips-colors.png)
+![colors](images/vscode-colors.png)
 
 ### Snippets
-![snippets](images/vscode-mips-snippets.png)
+Please wait for the next release
 
 ## Release Notes
 

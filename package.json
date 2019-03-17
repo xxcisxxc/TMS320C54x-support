@@ -4,14 +4,14 @@
     "description": "Provides syntax highlighting and snippets for TMS320C54x DSP assembly language",
     "version": "0.0.1",
     "publisher": "xiexincheng",
-    "homepage": "https://github.com/kdarkhan/vscode-mips-support",
+    "homepage": "https://github.com/5966466/TMS320C54x-support",
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kdarkhan/vscode-mips-support"
+        "url": "https://github.com/5966466/TMS320C54x-support"
     },
     "bugs": {
-        "url": "https://github.com/kdarkhan/vscode-mips-support/issues",
+        "url": "https://github.com/5966466/TMS320C54x-support/issues",
         "email": "w5966466@gmail.com"
     },
     "engines": {
@@ -53,7 +53,7 @@
             {
                 "label": "Nord MIPS",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Nord MIPS-color-theme.json"
+                "path": "./themes/TMS320C54x-color-theme.json"
             }
         ]
     }
