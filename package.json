@@ -3,7 +3,7 @@
     "displayName": "TMS320C54x DSP Assembly",
     "description": "Provides syntax highlighting and snippets for TMS320C54x DSP assembly language",
     "version": "0.0.1",
-    "publisher": "xiexincheng",
+    "publisher": "Xiexiaocheng",
     "homepage": "https://github.com/5966466/TMS320C54x-support",
     "icon": "images/icon.png",
     "repository": {
@@ -51,7 +51,7 @@
         ],
         "themes": [
             {
-                "label": "Nord MIPS",
+                "label": "Nord TMS320C54x",
                 "uiTheme": "vs-dark",
                 "path": "./themes/TMS320C54x-color-theme.json"
             }
