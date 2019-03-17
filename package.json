@@ -1,0 +1,60 @@
+{
+    "name": "tms320c54x-support",
+    "displayName": "TMS320C54x DSP Assembly",
+    "description": "Provides syntax highlighting and snippets for TMS320C54x DSP assembly language",
+    "version": "0.0.1",
+    "publisher": "xiexincheng",
+    "homepage": "https://github.com/kdarkhan/vscode-mips-support",
+    "icon": "images/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kdarkhan/vscode-mips-support"
+    },
+    "bugs": {
+        "url": "https://github.com/kdarkhan/vscode-mips-support/issues",
+        "email": "w5966466@gmail.com"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "tms320c54x",
+                "aliases": [
+                    "TMS320C54x DSP Assembly",
+                    "tms320c54x"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".cmd"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tms320c54x",
+                "scopeName": "source.tms320c54x",
+                "path": "./syntaxes/tms320c54x.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "tms320c54x",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Nord MIPS",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Nord MIPS-color-theme.json"
+            }
+        ]
+    }
+}

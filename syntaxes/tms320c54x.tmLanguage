@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>asm</string>
+		<string>cmd</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~M</string>
+	<key>name</key>
+	<string>TMS320C54x DSP Assembler</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(AND|ANDM|OR|ORM|XOR|XORM|ROL|ROLTC|ROR|SFTA|SFTC|SFTL|BIT|BITF|BITT|CMPM|CMPR)\b</string>
+			<key>name</key>
+			<string>support.function.logical.tms320c54x</string>
+		</dict>
+		
+		<dict>
+			<key>match</key>
+			<string>\b(ADD|ADDC|ADDM|ADDS|SUB|SUBB|SUBC|SUBS|MPY|MPYR|MPYA|MPYU|SQUR|MAC|MACR|MACA|MACAR|MACD|MACP|MACSU|MAS|MASR|MASA|MASAR|SQURA|SQURS|DADD|DADST|DRSUB|DSADT|DSUB|DSUBT|ABDST|ABS|CMPL|DELAY|EXP|FIRS|LMS|MAX|MIN|NEG|NORM|POLY|RND|SAT|SQDST)\b</string>
+			<key>name</key>
+			<string>support.function.arithmetic.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b(DLD|LD|LDM|LDR|LDU|LTD|DST|ST|STH|STL|STLM|STM|CMPS|SACCD|SRCCD|STRCD|MVDD|MVDK|MVDM|MVDP|MVKD|MVMD|MVMM|MVPD|PORTR|PORTW|READA|WRITA)\b</string>
+			<key>name</key>
+			<string>support.function.registers.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b(B +|BACC|BANZ|BC|FB|CALA|CALL|CC|FCALA|FCALL|INTR|TRAP|FRET|FRETE|RC|RET|RETE|RETF|RPT|RPTB|RPTZ|FRAME|POPD|POPM|PSHD|PSHM|IDLE|MAR|NOP|RESET|RSBX|SSBX|XC)\b</string>
+			<key>name</key>
+			<string>support.function.jumps.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.label.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(MEMORY|SECTIONS|PAGE \d+|PAGE)\b</string>
+			<key>name</key>
+			<string>meta.tag.label.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\.(bes|byte|field|float|int|log|space|string|pstring|xfloat|xlong|word|bss|data|sect|text|usect)\b</string>
+			<key>name</key>
+			<string>storage.type.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\.(align|drlist|drnolist|copy|def|global|include|mlib|ref)\b</string>
+			<key>name</key>
+			<string>storage.modifier.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\.(break|else|elseif|endif|endloop|if|loop|asg|endstruct|equ|eval|label|set|struct|tag|algebraic|emsg|end|mmregs|mmsg|newblock|sblock|version|wmsg)\b</string>
+			<key>name</key>
+			<string>storage.control.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.label.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b([A-Za-z0-9_]+):</string>
+			<key>name</key>
+			<string>meta.function.label.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(\*|#|@)([A-Za-z0-9_]+)\b</string>
+			<key>name</key>
+			<string>support.variable.addressdata.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.variable.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(IMR|IFR|ST0[0-1]|A|AL|AH|AG|B|BL|BH|BG|T|TRN|AR[0-7]|SP|BK|BRC|RSA|REA|PMST|XPC)\b</string>
+			<key>name</key>
+			<string>variable.other.register.usable.internal.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.variable.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(DRR20|DRR10|DXR20|DXR10|TIM|SWCR|HPIC|TIM1|PRD1|TCR1|SPSA0|SPSD0|GPIOCR|GPIOSR|DRR21|DRR11|PRD|TCR|SWWER|BSCR|DXR21|DXR11|SPSA1|SPSD1|DMPREC|DMSA|DMSDI|DMSDN|CLKMD)\b</string>
+			<key>name</key>
+			<string>variable.other.register.usable.external.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b\d+\.\d+\b</string>
+			<key>name</key>
+			<string>constant.numeric.float.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b(\d+|0(x|X)[a-fA-F0-9]+|[a-fA-F0-9]+(H|h)|[0-1]+(B|b)|[0-8]+(O|o)|\d+(D|d))\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.tms320c54x</string>
+		</dict>
+
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.tms320c54x</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\[rnt\\"]</string>
+					<key>name</key>
+					<string>constant.character.escape.tms320c54x</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>'</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.tms320c54x</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\[rnt\\"]</string>
+					<key>name</key>
+					<string>constant.character.escape.tms320c54x</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>begin</key>
+			<string>(^[ \t]+)?(?=;|\*{2,})</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.whitespace.comment.leading.tms320c54x</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?!\G)</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>(;|\*{2,})</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.tms320c54x</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\n|\*{2,})</string>
+					<key>name</key>
+					<string>comment.line.number-sign.tms320c54x</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.tms320c54x</string>
+	<key>uuid</key>
+	<string>7FD88C2E-6BE3-11D9-9A40-0011242E4184</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+{
+	"tokenColors": [
+		{
+			"scope": "support", 
+			"settings": {
+				"foreground": "#bd1598",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "entity.name.function.label.tms320c54x",
+			"settings": {
+				"foreground": "#427748"
+			}
+		},
+		{
+			"scope": "support.variable.addressdata.tms320c54x", 
+			"settings": {
+				"foreground": "#4d6eda",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "variable.other.register.usable",
+			"settings": {
+				"foreground": "#eb9627",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#c54949"
+			}
+		},
+		{
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#0af0a3"
+			}
+		},
+		{
+			"scope": "punctuation.definition.variable.tms320c54x",
+			"settings": {
+				"foreground": "#eb9627"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#606466"
+			}
+		},
+		{
+			"scope": "meta.tag",
+			"settings": {
+				"foreground": "#e29dd1",
+				"fontStyle": "bold"
+			}
+		},
+	]
+}
