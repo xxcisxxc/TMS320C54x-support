@@ -15,28 +15,28 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(AND|ANDM|OR|ORM|XOR|XORM|ROL|ROLTC|ROR|SFTA|SFTC|SFTL|BIT|BITF|BITT|CMPM|CMPR)\b</string>
+			<string>\b(?i)(AND|ANDM|OR|ORM|XOR|XORM|ROL|ROLTC|ROR|SFTA|SFTC|SFTL|BIT|BITF|BITT|CMPM|CMPR)\b</string>
 			<key>name</key>
 			<string>support.function.logical.tms320c54x</string>
 		</dict>
 		
 		<dict>
 			<key>match</key>
-			<string>\b(ADD|ADDC|ADDM|ADDS|SUB|SUBB|SUBC|SUBS|MPY|MPYR|MPYA|MPYU|SQUR|MAC|MACR|MACA|MACAR|MACD|MACP|MACSU|MAS|MASR|MASA|MASAR|SQURA|SQURS|DADD|DADST|DRSUB|DSADT|DSUB|DSUBT|ABDST|ABS|CMPL|DELAY|EXP|FIRS|LMS|MAX|MIN|NEG|NORM|POLY|RND|SAT|SQDST)\b</string>
+			<string>\b(?i)(ADD|ADDC|ADDM|ADDS|SUB|SUBB|SUBC|SUBS|MPY|MPYR|MPYA|MPYU|SQUR|MAC|MACR|MACA|MACAR|MACD|MACP|MACSU|MAS|MASR|MASA|MASAR|SQURA|SQURS|DADD|DADST|DRSUB|DSADT|DSUB|DSUBT|ABDST|ABS|CMPL|DELAY|EXP|FIRS|LMS|MAX|MIN|NEG|NORM|POLY|RND|SAT|SQDST)\b</string>
 			<key>name</key>
 			<string>support.function.arithmetic.tms320c54x</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>\b(DLD|LD|LDM|LDR|LDU|LTD|DST|ST|STH|STL|STLM|STM|CMPS|SACCD|SRCCD|STRCD|MVDD|MVDK|MVDM|MVDP|MVKD|MVMD|MVMM|MVPD|PORTR|PORTW|READA|WRITA)\b</string>
+			<string>\b(?i)(DLD|LD|LDM|LDR|LDU|LTD|DST|ST|STH|STL|STLM|STM|CMPS|SACCD|SRCCD|STRCD|MVDD|MVDK|MVDM|MVDP|MVKD|MVMD|MVMM|MVPD|PORTR|PORTW|READA|WRITA)\b</string>
 			<key>name</key>
 			<string>support.function.registers.tms320c54x</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>\b(B +|BACC|BANZ|BC|FB|CALA|CALL|CC|FCALA|FCALL|INTR|TRAP|FRET|FRETE|RC|RET|RETE|RETF|RPT|RPTB|RPTZ|FRAME|POPD|POPM|PSHD|PSHM|IDLE|MAR|NOP|RESET|RSBX|SSBX|XC)\b</string>
+			<string>\b(?i)(B +|BACC|BANZ|BC|FB|CALA|CALL|CC|FCALA|FCALL|INTR|TRAP|FRET|FRETE|RC|RET|RETE|RETF|RPT|RPTB|RPTZ|FRAME|POPD|POPM|PSHD|PSHM|IDLE|MAR|NOP|RESET|RSBX|SSBX|XC)\b</string>
 			<key>name</key>
 			<string>support.function.jumps.tms320c54x</string>
 		</dict>
@@ -65,7 +65,7 @@
 
 		<dict>
 			<key>match</key>
-			<string>\.(align|drlist|drnolist|copy|def|global|include|mlib|ref)\b</string>
+			<string>\.(align|drlist|drnolist|copy|def|global|include|mlib|ref|title)\b</string>
 			<key>name</key>
 			<string>storage.modifier.tms320c54x</string>
 		</dict>

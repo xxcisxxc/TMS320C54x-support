@@ -1,4 +1,6 @@
 {
+	"$schema": "vscode://schemas/color-theme",
+	"name": "tms320c54x-dark",
 	"tokenColors": [
 		{
 			"scope": "support", 
@@ -43,6 +45,12 @@
 			"scope": "punctuation.definition.variable.tms320c54x",
 			"settings": {
 				"foreground": "#eb9627"
+			}
+		},
+		{
+			"scope": "constant.character",
+			"settings": {
+				"foreground": "#70b0ec"
 			}
 		},
 		{
